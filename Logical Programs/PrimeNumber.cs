@@ -17,9 +17,9 @@ namespace Logical_Programs
                 return 0;
             }
             //check for prime
-            for(int i = 2; i<= number/2; i++)
+            for(int divisor = 2; divisor <= number/2; divisor++)
             {
-                if(number % i == 0)
+                if(number % divisor == 0)
                 {
                     Console.WriteLine($"{number} is not a prime");
                     flag = 1;

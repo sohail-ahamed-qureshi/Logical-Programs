@@ -41,9 +41,9 @@ namespace Logical_Programs
                     break;
                 case 4:
                     ////Reverse a number
-                    //PrimeNumber prime = new PrimeNumber();
-                    //prime.CheckPrime(23);
-                    //break;
+                    ReverseNumebr reverse = new ReverseNumebr();
+                    reverse.DoReverse(123);
+                    break;
                 case 5:
                     ////prime number (2,3,5,7,11... )
                     //PrimeNumber prime = new PrimeNumber();
