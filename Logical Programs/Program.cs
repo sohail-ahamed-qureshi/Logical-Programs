@@ -22,10 +22,14 @@ namespace Logical_Programs
             switch (selection)
             {
                 case 1:
+                    //Fibonacci Series
                     GenerateFibonacciSeries fibonacciSeries = new GenerateFibonacciSeries();
                     fibonacciSeries.FibonacciSeries(10);
                     break;
                 case 2:
+                    //perfect number (6, 28, 496, 8128 )
+                    PerfectNumber perfect = new PerfectNumber();
+                    perfect.CheckPerfectNumber(8128);
                     break;
                 default:
                     Console.WriteLine("Error");
