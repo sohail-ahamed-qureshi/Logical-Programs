@@ -8,14 +8,16 @@ namespace Logical_Programs
     {
         public int FibonacciSeries(int range)
         {
-            int fibonacci, previous_number=1, current_number = 2;
+            //variables
+            int fibonacci, previous_number=1, current_number = previous_number + 1;
             //check if number is greater than one
             if(range <= 1)
             {
                 Console.WriteLine("enter the range greater than 1.");
                 return 0;
             }
-            Console.Write(previous_number+" " +current_number);
+            //display initial numbers 1 and 2.
+            Console.Write("Fibonacci Series :"+previous_number+" " +current_number);
             for ( int counter= 1; counter <= range; counter++)
             {
                 fibonacci = previous_number + current_number;
