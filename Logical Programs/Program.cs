@@ -8,7 +8,10 @@ namespace Logical_Programs
         {
             Console.WriteLine("Welcome to Logical Programs");
             Console.WriteLine("Press 1. for Fibonacci Series.");
-            Console.WriteLine("Press 1. for Perfect number.");
+            Console.WriteLine("Press 2. for Perfect number.");
+            Console.WriteLine("Press 3. for Prime number.");
+            Console.WriteLine("Press 4. for Reverse number.");
+            Console.WriteLine("Press 5. for Stop watch number.");
             //user input
             int selection = Convert.ToInt32(Console.ReadLine());
             //validating selection 
@@ -31,14 +34,25 @@ namespace Logical_Programs
                     PerfectNumber perfect = new PerfectNumber();
                     perfect.CheckPerfectNumber(8128);
                     break;
+                case 3:
+                    //prime number (2,3,5,7,11... )
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.CheckPrime(23);
+                    break;
+                case 4:
+                    ////Reverse a number
+                    //PrimeNumber prime = new PrimeNumber();
+                    //prime.CheckPrime(23);
+                    //break;
+                case 5:
+                    ////prime number (2,3,5,7,11... )
+                    //PrimeNumber prime = new PrimeNumber();
+                    //prime.CheckPrime(23);
+                    //break;
                 default:
                     Console.WriteLine("Error");
                     break;
-
             }
-           
-
-
         }
     }
 }
