@@ -11,10 +11,10 @@ namespace Logical_Programs
             Console.WriteLine("Press 2. for Perfect number.");
             Console.WriteLine("Press 3. for Prime number.");
             Console.WriteLine("Press 4. for Reverse number.");
-            Console.WriteLine("Press 5. for Stop watch number.");
+            Console.WriteLine("Press 5. to Stimulate Stop watch.");
             //user input
             int selection = Convert.ToInt32(Console.ReadLine());
-            //validating selection 
+            //validating input 
             while(selection < 1 || selection > 6)
             {
                 Console.WriteLine("Invalid input");
@@ -45,12 +45,9 @@ namespace Logical_Programs
                     reverse.DoReverse(123);
                     break;
                 case 5:
-                    ////prime number (2,3,5,7,11... )
-                    //PrimeNumber prime = new PrimeNumber();
-                    //prime.CheckPrime(23);
-                    //break;
-                default:
-                    Console.WriteLine("Error");
+                    //Stopwatch
+                    StopWatch watch = new StopWatch();
+                    watch.StimulateStopWatch();
                     break;
             }
         }
